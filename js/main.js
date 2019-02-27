@@ -10,13 +10,16 @@ $(document).ready(function() {
     	$(this).parents('.modal').fadeOut();
     });
 
+   
+
     $('#no').click(function() {
         $('#modal1').fadeOut("slow");
     });
 
     $('#bars').click(function() {
         $('.nav').slideToggle().toggleClass('open');
-        console.log('ishla');
+        $(this).toggleClass('crim');
+        
     });
 
     $('.nav .close').click(function() {
@@ -32,5 +35,21 @@ $(document).ready(function() {
    		$(this).toggleClass('crim');
    		$('#modal-language').slideToggle().toggleClass('open');
    		
-   	})
+   	});
+
+   	$('#comments-dots').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+		
+        asNavFor: '#comments'
+    });
+    $('#comments').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //autoplay: true,
+        asNavFor: '#comments-dots',
+        focusOnSelect: true,
+        //dots: true
+    });
 })

@@ -5,6 +5,8 @@
 body {
   margin: 0;
   padding: 0;
+  background: #000;
+  color: #fff;
 }
 
 a {
@@ -19,10 +21,15 @@ button {
 }
 
 header {
+  background: #fff;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  background: #fff;
 }
 
 .row {
@@ -31,9 +38,18 @@ header {
   align-items: center;
 }
 
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container {
   width: 90%;
   margin: auto;
+}
+.container1 {
+	width: 95%;
+	margin: auto;
 }
 
 #head {
@@ -110,6 +126,7 @@ nav .sub-menu a {
   display: none;
 }
 .nav ul {
+  margin-top: 0;
   padding-top: 25px;
   list-style: none;
 }
@@ -138,8 +155,7 @@ nav .sub-menu a {
 }
 
 #bars {
-  background: crimson;
-  color: #fff;
+  color: #e16608;
   font-size: 40px;
   display: none;
 }
@@ -154,6 +170,65 @@ nav .sub-menu a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#hero-area {
+  background: url(../../img/home-slide-1.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 120px;
+  padding-left: 110px;
+  padding-bottom: 160px;
+}
+#hero-area #comments {
+  width: 50%;
+}
+#hero-area #comments h2 {
+  font-size: 50px;
+}
+#hero-area #comments h2 a {
+  color: #fff;
+  font-weight: bold;
+}
+#hero-area #comments p {
+  font-size: 20px;
+}
+#hero-area #comments-dots {
+  position: absolute;
+  top: 94%;
+}
+#hero-area #comments-dots button {
+  width: 60px !important;
+  height: 8px;
+  background: #fff;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+#hero-area #comments-dots button:hover {
+  background: #e16608;
+}
+
+#comments-dots .slick-list .slick-track {
+  width: 20%;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none !important;
+}
+
+.slick-dots li button {
+  font-size: 0px;
+  line-height: 0;
+  display: block;
+  width: 60px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #fff;
+  margin-right: 10px;
 }
 
 .overlay {
@@ -176,14 +251,15 @@ nav .sub-menu a {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   width: 76%;
   margin: auto;
   top: 0;
   right: 12%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   font-size: 20px;
   border-bottom: 7px solid #e16608;
+  z-index: 999;
 }
 .modal .modal-content {
   padding: 35px;
@@ -261,13 +337,14 @@ nav .sub-menu a {
 }
 
 .crim {
+  color: #fff !important;
   background: crimson;
 }
 
 .foot {
   background: #222;
   font-size: 20px;
-  padding-top: 50px;
+  padding: 60px 0;
 }
 .foot h4 {
   font-size: 27px;
@@ -292,16 +369,20 @@ nav .sub-menu a {
   color: #fff;
 }
 
+.pen {
+  display: none !important;
+}
+
 footer {
   font-size: 20px;
   font-weight: bold;
-  padding-top: 16px;
+  padding-top: 20px;
 }
 footer .row {
   width: 99%;
   margin: auto;
 }
-footer .row .row1 {
+footer .row .row2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -712,15 +793,165 @@ medeia mobile*/
   #search {
     border-left: none;
   }
+
+  .footer .row {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+  .footer .row .row2 {
+    width: 100%;
+  }
+  .footer .row .row5 {
+    width: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+  }
+  .footer .row .copyright {
+    width: 100%;
+    text-align: left;
+  }
+
+  #hero-area {
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-bottom: 140px;
+  }
+  #hero-area #comments {
+    width: 55%;
+  }
+  #hero-area #comments h2 {
+    font-size: 45px;
+  }
+  #hero-area #comments p {
+    font-size: 20px;
+  }
+  #hero-area #comments-dots {
+    margin: auto;
+    top: 75%;
+  }
+
+  #modal1 {
+    width: 100%;
+    right: 0;
+    background: #111;
+  }
+
+  #p1 {
+    display: block;
+    text-align: center;
+  }
+
+  #p2, #p3, #no {
+    display: none;
+  }
+
+  /*	p
+  				
+  				text-align: center;
+  			
+  			#p2, #p3, #no {
+  				display: none !important;
+  			
+  		
+  	
+  }*/
 }
 @media screen and (max-width: 768px) {
+  #hero-area {
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 120px;
+  }
+  #hero-area #comments {
+    width: 75%;
+  }
+  #hero-area #comments h2 {
+    font-size: 30px;
+  }
+  #hero-area #comments p {
+    font-size: 20px;
+  }
+  #hero-area #comments-dots {
+    margin: auto;
+    top: 62%;
+  }
+
   #search {
     margin: 0;
     padding-left: 0;
   }
 
+  .foot {
+    display: none;
+  }
+
+  .footer {
+    width: 97%;
+    margin: auto;
+  }
+
+  .row3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .row3 .logo {
+    margin-top: 10px;
+    width: 100%;
+  }
+
   #language span {
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  #hero-area #comments {
+    text-align: center;
+  }
+  #hero-area #comments p {
+    display: none;
+  }
+  #hero-area #comments-dots {
+    top: 52%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #hero-area #comments {
+    width: 90%;
+  }
+  #hero-area #comments-dots {
+    top: 52%;
+    left: 20%;
+    text-align: center;
+  }
+  #hero-area #comments-dots button {
+    width: 40px !important;
+  }
+
+  #modal1 .modal-content {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #hero-area {
+    padding-left: 40px;
+    padding-bottom: 60px;
+  }
+  #hero-area #comments-dots {
+    top: 43%;
+    left: 20%;
+    text-align: center;
+  }
+  #hero-area #comments-dots button {
+    width: 40px !important;
+  }
+
+  #modal1 .modal-content {
+    padding: 5px;
+  }
+  #modal1 .modal-content #modal-buttons button {
+    width: 120px;
   }
 }
 
