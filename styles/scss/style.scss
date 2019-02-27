@@ -11,10 +11,23 @@ a {
     cursor: pointer;
     color: #000;
 }
+button {
+	cursor: pointer;
+}
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.container {
+	width: 90%;
+	margin:auto;
 }
 #head {
     height: 114px;
@@ -38,7 +51,7 @@ nav {
         background-color: #222;
         display: none;
         padding: 55px;
-        margin: 30px 0 0 -60px;
+        margin: 42px 0 0 -60px;
         width: 315px;
         list-style: none;
         position: absolute;
@@ -104,7 +117,7 @@ nav {
         background-color: #222;
         display: none;
         padding: 55px;
-        margin: 30px 0 0 -60px;
+        margin: 40px 0 0 -60px;
         width: 315px;
         list-style: none;
         position: absolute;
@@ -129,17 +142,160 @@ nav {
     align-items: center;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 999;
 }
+.orange {
+    color: #e16608;
+}
+#modal1, #modal-language {
+	 margin-top: 150px;
+}
 .modal {
-    background: #222;
+    position: absolute;
+    width: 76%;
+    margin: auto;
+    top: 0;
+    right: 12%;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    border-bottom: 7px solid #e16608;
+    .modal-content {
+        padding: 35px;
+        #modal-buttons {
+        	display: flex;
+        	justify-content: space-between;
+        	align-items:center;
+            .btn, .close {
+                width: 220px !important;
+                height: 50px;
+                background: #e16608;
+                color: #fff;
+                border: none;
+                font-weight: bold;
+                margin-right: 5%;
+            }
+            button:hover {
+            	background: crimson !important;
+            }
+        }
+    }
+    .modal-footer {
+        height: 45px;
+        text-align: right;
+        #close-modal {
+            background: transparent;
+            color: #e16608;
+            border-left: 1px solid #eee;
+            border-top: 1px solid #eee;
+            border-bottom: 0;
+            border-right: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+#modal-language {
+	background: #222;
+	color: #fff;
+	display: none;
+	
+	h4{
+		font-size: 30px;
+		margin-left: 6%;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	div {
+		ul {
+
+			list-style: none;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			li {
+				width: 50%;
+				div {
+					margin-right: 20px;
+					float:left;
+					span {
+						font-size: 23px;
+
+					}
+					p {
+						a{
+							color: #fff;
+							font-weight: bold;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#p1 {
+    display: none;
+}
+.border {
+    border: 1px solid #7a7a7a;
+}
+.crim {
+	background: crimson;
+}
+
+.foot {
+	background: #222;	
+	font-size: 20px;
+	padding-top:50px;
+	h4 {
+		font-size: 27px;
+		color: #e16608;
+	}
+	ul {
+		list-style: none;
+		padding-left:0;		
+		li {
+			margin-bottom: 10px;
+			a {
+				font-size: 20px;
+				color: #fff;
+				font-weight: 400 !important;
+			}
+		}
+	}
+	.contacts {
+		color: #fff;
+		h4 {
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+footer {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top:16px;
+
+	.row {
+		width: 99%;
+		margin: auto;
+		.row1 {
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+		}
+	}
+	.copyright {
+		
+		font-weight: 500;
+	}
 }
 @for $i from 1 through 10 {
     .m-#{$i} {
@@ -192,6 +348,14 @@ nav {
 .fon {
     background: rgba(0, 0, 0, 0.5);
 }
+@for $i from 1 through 20 {
+	.col-#{$i} {
+		width: #{$i * 5%};
+	}
+}
+
+
+/********* Footer started here ******/
 /*////////////
 medeia mobile*/
 

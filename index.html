@@ -30,7 +30,7 @@
 			</ul>							
 		</nav>
     	<div id="header-in">
-    		<a href="#" id="search" class="border-x mx-4 px-6 py-5">
+    		<a href="#" id="search" class="border-x px-7 py-5">
     			<i class="fas fa-search" style="font-size:40px; color:#e16608; padding-top: 10px"></i></a>
     		<a href="#" id="language" class="px-3 py-5" style="border-right: 1px solid #eee">
 					<img src="img/flag-singapore.png" alt="">
@@ -63,19 +63,141 @@
 						<button type="submit"><i class="fas fa-search"></i></a></button>
 					</form>
 				</div>
-    <div class="modal">
-		<div class="modal-content">
-			<p class="">View localised content for Myanmar?</p>
-			<p class="">We noticed that you are surfing from Myanmar. Would you like to view localised content for Myanmar?</p>
-			<p class="">အကြှနျုပျတို့သညျမြန်မာကနေ surfing ဖြစ်ကြောင်းသတိပြုမိသည်။ သငျသညျမြန်မာနိုင်ငံအတွက်ဒေသတွင်းအကြောင်းအရာကိုကြည့်ရှုရန်လိုပါသလား</p>
-			<p><a href="#" class="btn">English</a><a href="#" class="btn">မြန်မာ</a><a href="#" class="close">No</a></p>
+	<!-- Hero modal -->
+	    <div class="modal" id="modal1">
+			<div class="modal-content">
+				<p class="orange" id="p1">View localised content for Myanmar?</p>
+				<p class="orange" id="p2">We noticed that you are surfing from Myanmar. Would you like to view localised content for Myanmar?</p>
+				<p class="" id="p3" style="color:#fff">အကြှနျုပျတို့သညျမြန်မာကနေ surfing ဖြစ်ကြောင်းသတိပြုမိသည်။ သငျသညျမြန်မာနိုင်ငံအတွက်ဒေသတွင်းအကြောင်းအရာကိုကြည့်ရှုရန်လိုပါသလား</p>
+				<p id="modal-buttons"><button class="btn">English</button><button class="btn">မြန်မာ</button><button class="close" id="no">No</button></p>
+			</div>
+			<div class="modal-footer">
+				<button class="close px-7 py-3" id="close-modal">X</button>
+			</div>
 		</div>
-		<div class="modal-footer">
-			<span class="close"></span>
+	<!--  -->
+	<div class="modal" id="modal-language">
+			<h4>Select your country & language</h4>		
+		<div class="modal-content">
+			<ul>
+				<li>
+					<div class="flag"><img src="img/flag-all-115x67.png" alt=""></div>
+					<div class="languages">
+						<span>All Countries</span>
+						<p><a href="#">English</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="flag"><img src="img/flag-cambodia-115x67.png" alt=""></div>
+					<div class="languages">
+						<span>Cambodia</span>
+						<p><a href="#">English</a> | <a href="#">ខ្មែរ</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="flag"><img src="img/flag-myanmar-115x67.png" alt=""></div>
+					<div class="languages">
+						<span>Myanmar</span>
+						<p><a href="#">English</a> | <a href="#">မြန်မာ</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="flag"><img src="img/flag-bangladesh-115x67.png" alt=""></div>
+					<div class="languages">
+						<span>Bangladesh</span>
+						<p><a href="#">English</a> | <a href="#">বাঙালি</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="flag"><img src="img/flag-malaysia-115x67.png" alt=""></div>
+					<div class="languages">
+						<span>Malaysia</span>
+						<p><a href="#">English</a> | <a href="#">Malay</a></p>
+					</div>
+				</li>
+			</ul>
+		</div>		
+	</div>
+	<div class="foot">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">				
+						<h4>Navigation</h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About </a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>				
+				</div>
+				<div class="col-5">
+					<h4>Products</h4>
+					<ul>
+						<li><a href="#">Products 1</a></li>
+						<li><a href="#">Products 2</a></li>
+						<li><a href="#">Products 3</a></li>
+						<li><a href="#">Products 4</a></li>
+						<li><a href="#">Products 5</a></li>
+					</ul>
+				</div>
+				<div class="col-5">
+					<h4>Latest News</h4>
+					<ul>
+						<li><a href="#">News 1</a></li>
+						<li><a href="#">News 2</a></li>
+						<li><a href="#">News 3</a></li>
+						<li><a href="#">News 4</a></li>
+						<li><a href="#">News 5</a></li>
+					</ul>
+				</div>
+				<div class="col-5">
+					<div class="contacts">
+						<h4>Contact</h4>
+						<address>
+							<p>9B Jurong Pier Rd, Singapore 619163</p>
+							<h4><a href="tel:+65 6266 1966">+65 6266 1966</a></h4>
+						</address>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<footer>
+		<div class="footer">
+			<div class="row">
+				<div class="col-10 row1">
+						
+							<div class="logo">
+								<a href="#"><img src="img/logo-jxtg.png" alt=""> Nippon Oil & Energy Corporation</a>
+							</div>
+						
+						
+							<div class="logo">
+								<a href="#">Eneos Global</a>
+							</div>
+						
+					
+				</div>
+				<div class="col-10">
+					<div class="row">
+						<div class="col-10">
+							<a href="#" class="px-7 py-7 border"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="px-7 py-7" style="border-right: 1px solid #eee"><i class="fab fa-youtube"></i></a>
+						</div>
+						<div class="col-10">
+							<div class="copyright">
+								<p>© 2017 ENEOS. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
     
-		<div style="background-color: #000; height: 500px"></div>
+		
 
 		<div class="overlay"></div>
     <script src="js/jquery.js"></script>
