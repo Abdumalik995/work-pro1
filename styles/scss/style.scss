@@ -108,7 +108,10 @@ nav {
     }
 }
 .sub-menu-parent:hover .sub-menu {
-    display: block;
+    display: block !important;
+}
+#subs:hover .sub-menu {
+    display: block !important;
 }
 .nav {
     background-color: #222;
@@ -429,10 +432,10 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     h3 {
-    	margin-top: 0;
-    	margin-left: 50px;
-    	margin-bottom: 40px;
-    	font-size: 25px;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        font-size: 25px;
     }
 }
 .rowwed .card {
@@ -448,7 +451,7 @@ footer {
     border-bottom: 7px solid crimson;
 }
 .rowwed .card-content {
-	padding-top: 15px;
+    padding-top: 15px;
     padding: 20px 25px;
     h4 {
         font-size: 23px;
@@ -544,7 +547,7 @@ footer {
         .col-6 {
             margin-top: 0;
             height: 100%;
-            background: #222;
+            background: #191919;
             padding: 50px;
             margin-right: 3%;
             h2 {
@@ -572,7 +575,7 @@ footer {
                     }
                 }
                 .list-in {
-                    background: #223;
+                    background: #222;
                     text-align: center;
                     height: 55px;
                     line-height: 55px;
@@ -588,6 +591,82 @@ footer {
                     a {
                         color: #e16608;
                     }
+                }
+            }
+        }
+    }
+}
+.gallery {
+    position: relative;
+    width: 98%;
+    margin: auto;
+    #hero-img {
+        padding: 0 !important;
+        width: 100%;
+        height: 75%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #flex-img {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 !important;
+        border: 1px solid #222;
+        overflow: hidden;
+        .fast {
+            text-align: center;
+            width: 5% !important;
+            font-size: 25px;
+            button {
+            	border: none;
+            	background:transparent;
+            	color: #e16608;
+
+            }
+        }
+        .slider-img {
+            text-align: center;
+            padding: 0 !important;
+            img {
+                width: 100px;
+                margin: 10px;
+            }
+        }
+        .fast:first-child {
+            border-right: 1px solid #222;
+        }
+        .fast:last-child {
+            border-left: 1px solid #222;
+        }
+    }
+}
+#page-news {
+    background: url(../../img/technology-page-header-bg.jpg);
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    h2 {
+        font-size: 50px;
+    }
+    .bread {
+        margin-top: 150px;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-start;
+            li {
+                a {
+                    font-size: 20px;
+                    color: #eee !important;
+                    font-weight: 400;
                 }
             }
         }
@@ -641,6 +720,18 @@ medeia mobile*/
 @media screen and (max-width: 1024px) {
     .rowwed .card {
         width: 300px;
+    }
+    .gallery {
+        #flex-img {
+            .fast {
+               
+            }
+            .slider-img {
+                img {
+                    width: 50px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 992px) {
@@ -741,8 +832,8 @@ medeia mobile*/
         display: none;
     }
     #carded h3 {
-    	text-align: center;
-    	margin-left: 0;
+        text-align: center;
+        margin-left: 0;
     }
     .rowwed {
         width: 95%;
@@ -852,8 +943,6 @@ medeia mobile*/
             width: 20%;
             text-align: center;
         }
-        
-        
     }
 }
 @media screen and (max-width: 640px) {

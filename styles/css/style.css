@@ -121,7 +121,11 @@ nav .sub-menu a {
 }
 
 .sub-menu-parent:hover .sub-menu {
-  display: block;
+  display: block !important;
+}
+
+#subs:hover .sub-menu {
+  display: block !important;
 }
 
 .nav {
@@ -824,7 +828,7 @@ footer .copyright {
 #page-content .row .col-6 {
   margin-top: 0;
   height: 100%;
-  background: #222;
+  background: #191919;
   padding: 50px;
   margin-right: 3%;
 }
@@ -854,7 +858,7 @@ footer .copyright {
   color: #e16608;
 }
 #page-content .row .col-6 .list-box .list-in {
-  background: #223;
+  background: #222;
   text-align: center;
   height: 55px;
   line-height: 55px;
@@ -870,6 +874,81 @@ footer .copyright {
 }
 #page-content .row .col-6 .list-box .list-in:hover a {
   color: #e16608;
+}
+
+.gallery {
+  position: relative;
+  width: 98%;
+  margin: auto;
+}
+.gallery #hero-img {
+  padding: 0 !important;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+}
+.gallery #hero-img img {
+  width: 100%;
+  height: 100%;
+}
+.gallery #flex-img {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  border: 1px solid #222;
+  overflow: hidden;
+}
+.gallery #flex-img .fast {
+  text-align: center;
+  width: 5% !important;
+  font-size: 25px;
+}
+.gallery #flex-img .fast button {
+  border: none;
+  background: transparent;
+  color: #e16608;
+}
+.gallery #flex-img .slider-img {
+  text-align: center;
+  padding: 0 !important;
+}
+.gallery #flex-img .slider-img img {
+  width: 100px;
+  margin: 10px;
+}
+.gallery #flex-img .fast:first-child {
+  border-right: 1px solid #222;
+}
+.gallery #flex-img .fast:last-child {
+  border-left: 1px solid #222;
+}
+
+#page-news {
+  background: url(../../img/technology-page-header-bg.jpg);
+  background-size: 100% 100%;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-bottom: 60px;
+}
+#page-news h2 {
+  font-size: 50px;
+}
+#page-news .bread {
+  margin-top: 150px;
+}
+#page-news .bread ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+#page-news .bread ul li a {
+  font-size: 20px;
+  color: #eee !important;
+  font-weight: 400;
 }
 
 .left {
@@ -993,6 +1072,10 @@ medeia mobile*/
 @media screen and (max-width: 1024px) {
   .rowwed .card {
     width: 300px;
+  }
+
+  .gallery #flex-img .slider-img img {
+    width: 50px;
   }
 }
 @media screen and (max-width: 992px) {
