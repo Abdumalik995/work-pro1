@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	$('#modal1').css('display','block');
+	
     //$('.overlay').css('display', 'block');
 
     /*$('').click(function() {
@@ -6,8 +9,8 @@ $(document).ready(function() {
 		$('.overlay').fadeOut(100);
         $('.modal').fadeOut(100);
     });*/
-    $('.modal .close').click(function() {
-    	$(this).parents('.modal').fadeOut();
+    $('#modal1 .close').click(function() {
+    	$(this).parents('#modal1').fadeOut();
     });
 
    
@@ -19,6 +22,8 @@ $(document).ready(function() {
     $('#bars').click(function() {
         $('.nav').slideToggle().toggleClass('open');
         $(this).toggleClass('crim');
+        $('#modal-language').fadeOut();
+        $('#language').removeClass('crim');
         
     });
 
@@ -31,9 +36,11 @@ $(document).ready(function() {
         $('.search').slideToggle().toggleClass('open');
     });
 
-   	$('#language').on('click', function() {
+   	$('#language').click(function() {
    		$(this).toggleClass('crim');
    		$('#modal-language').slideToggle().toggleClass('open');
+   		$('.nav').fadeOut();
+   		$('#bars').removeClass('crim');
    		
    	});
 
